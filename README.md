@@ -10,6 +10,7 @@ This is a naive bayes spam classifier, trainer, and API server all rolled into o
 const Classifier = require('spam-classifier').Classifier
 
 const classifier = new Classifier()
+classifier.save('path/to/model.json') // creates when not existing
 classifier.load('path/to/model.json')
 
 const spammyText = `Subject: hey there\nYou won the lottery!`
@@ -19,6 +20,8 @@ classifier.trainSpam(spammyText)
 classifier.trainHam(hammyText)
 
 const result = classifier.predict('Am I a spam bot?') // true or false
+
+classifier.save('path/to/model.json')
 ```
 
 ## CLI tool
