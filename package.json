@@ -1,6 +1,6 @@
 {
   "name": "spam-classifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple all-in-one naive bayes spam blocker with CLI trainer, server, and library",
   "main": "index.js",
   "scripts": {
