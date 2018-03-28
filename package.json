@@ -1,8 +1,8 @@
 {
   "name": "spam-classifier",
   "version": "1.0.0",
-  "description": "",
-  "main": "cli.js",
+  "description": "Simple all-in-one naive bayes spam blocker with CLI trainer, server, and library",
+  "main": "index.js",
   "scripts": {
     "dev": "MODEL=data/model.json node server.js",
     "start": "PORT=3000 MODEL=data/model.json node server.js",
@@ -10,7 +10,7 @@
     "fix": "standard --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jeff Parrish <jeffhparrish@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "standard": "^11.0.1"
