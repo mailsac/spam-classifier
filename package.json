@@ -1,0 +1,30 @@
+{
+  "name": "spam-classifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "scripts": {
+    "dev": "MODEL=data/model.json node server.js",
+    "start": "PORT=3000 MODEL=data/model.json node server.js",
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "commander": "^2.15.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "sqlite3": "^4.0.0"
+  },
+  "standard": {
+    "ignore": [
+      "lib/commonWords.js"
+    ]
+  }
+}
